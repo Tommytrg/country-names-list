@@ -1,0 +1,43 @@
+{
+  "name": "country-names-list",
+  "description": "Generate a list of the country names list in the selected language.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Tommytrg",
+    "email": "tomastrg22@gmail.com",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tommytrg/country-names-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tommytrg/country-names-list/issues"
+  },
+  "keywords": [
+    "country",
+    "name",
+    "translation",
+    "translate"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "latest",
+    "eslint": "^4.6.0",
+    "eslint-config-standard": "^10.2.1",
+    "mocha": "latest",
+    "nyc": "latest",
+    "should": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard-markdown && standard",
+    "pretest": "npm run lint",
+    "test": "nyc mocha"
+  },
+  "license": "MIT"
+}
